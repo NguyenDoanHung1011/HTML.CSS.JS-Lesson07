@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script type="text/javascript">
+        var a,b
+
+        function nhapA() {
+            a = parseFloat(prompt('Nhap a', 0))
+        }
+
+        function nhapB() {
+            b = parseFloat(prompt('Nhap b', 0))
+        }
+
+        function tong() {
+            alert("Ket Qua: " + (a + b))
+        }
+
+        function hieu() {
+            alert("Ket Qua: " + (a - b))
+        }
+
+        function tich() {
+            alert("Ket Qua: " + (a * b))
+        }
+
+        function thuong() {
+            alert("Ket Qua: " + (a / b))
+        }
+    </script>
+</head>
+<body>
+    <button onclick="nhapA()">Nhập a</button>
+    <button onclick="nhapB()">Nhập b</button>
+    <button onclick="tong()">Tính Tổng</button>
+    <button onclick="hieu()">Tính Hiệu</button>
+    <button onclick="tich()">Tính Tích</button>
+    <button onclick="thuong()">Tính Thương</button>
+</body>
+</html>
