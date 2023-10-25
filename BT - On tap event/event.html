@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On tap event</title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript">
+        var inputA
+        var inputB 
+
+        function inputData1() {
+            inputA = prompt('Nhap A', 0)
+        }
+
+        function inputData2() {
+            inputB = prompt('Nhap B', 0)
+        }
+
+        function showResult() {
+            num = parseInt(inputA) + parseInt(inputB)
+            alert(num)
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h4 class="heading">giải phương trình bậc 1</h4>
+        </div>
+        <div class="content">
+            <button class="button-input" onclick="inputData1()">nhập giá trị của a</button>
+            <button class="button-input" onclick="inputData2()">nhập giá trị của b</button>
+            <button class="button-input" onclick="showResult()">in kết quả</button>
+        </div>
+    </div>
+</body>
+</html>
